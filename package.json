@@ -2,11 +2,15 @@
   "name": "lomba",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://BahanGabutzz.github.io/BahanGabutzz.github.io",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "predeploy": "next build && next export",
+    "deploy": "gh-pages -d out",
     "lint": "next lint"
+
   },
   "dependencies": {
     "framer-motion": "^11.14.1",
@@ -22,6 +26,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.0",
+    "gh-pages": "^6.2.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
